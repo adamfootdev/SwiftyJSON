@@ -3,6 +3,13 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftyJSON",
+    platforms: [
+        .iOS(.v17),
+        .macOS(.v12),
+        .tvOS(.v17),
+        .visionOS(.v1),
+        .watchOS(.v9)
+    ],
     products: [
         .library(name: "SwiftyJSON", targets: ["SwiftyJSON"])
     ],
